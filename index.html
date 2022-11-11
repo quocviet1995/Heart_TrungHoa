@@ -76,6 +76,10 @@ canvas {
 		transform: scale(1);
 	}
 }
+.heart:before {
+  content: '\2665';
+  color: red;
+}
   </style>
  </HEAD>
  <BODY>
@@ -267,7 +271,7 @@ var ParticlePool = (function() {
     }
     context.closePath();
     // create the fill
-    context.fillStyle = '#FF0000'; // color
+    context.fillStyle = '#FF5CA4'; // color
     context.fill();
     // create the image
     var image = new Image();
@@ -315,5 +319,22 @@ var ParticlePool = (function() {
   }, 10);
 })(document.getElementById('pinkboard'));
   </script>
+  <div
+      class="center-text"
+      ,
+      style="background-color:rgb(0, 0, 0);
+        width: 100%;
+        color: rgb(225, 12, 168);
+        height:100%;
+        font-size: 31px;
+        font-style: italic;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 5px;
+        text-align: center;"
+    >
+      <span class="heart"></span><span class="heart"></span><span class="heart"></span>My destiny, Việt Love Trúc Forever <span class="heart"></span><span class="heart"></span><span class="heart"></span>
+    </div>
  </BODY>
 </HTML>
